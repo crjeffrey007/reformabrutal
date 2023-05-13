@@ -470,18 +470,20 @@ button.button-link {
     left: 0;
 }
 .wrap-imageabout {
-    padding: 10px;
+    padding: 0px;
     border: 1px solid #434648;
     background: #2D2D2D;
 }
 .wrap-imageabout img {
-    width: 100%;
+    width: 300px;
+    margin: auto;
+    display: flex;
 }
 .about-detailwrap p.title-detail {
     color: #b7b7b7;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-left: 50px;
+    padding-left: 0px;
     position: relative;
 }
 .about-detailwrap>p.title-detail:after {
