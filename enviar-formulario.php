@@ -1,6 +1,7 @@
 <?php
   // Datos del formulario
   $nombre = $_POST['nombre'];
+  $apellidos = $_POST['apellidos'];
   $email = $_POST['email'];
   $mensaje = $_POST['mensaje'];
 
