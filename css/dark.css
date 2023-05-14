@@ -494,6 +494,7 @@ button.button-link {
     position: absolute;
     left: 0;
     bottom: 10px;
+    display: none;
 }
 .about-detailwrap h3 {
     font-weight: 100;
