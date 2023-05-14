@@ -315,23 +315,53 @@
                                     Envie su mensaje.
                                 </p>
                             </div>
-                            <form id="contact-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <input type="name" placeholder="Nombre" name="nombre" />
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <input type="text" placeholder="Apellidos" name="apellidos" />
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <input type="text" placeholder="Email" name="email" />
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <textarea class="textarea" placeholder="Mensaje" name="mensaje"></textarea>
-                                        <button type="submit" class="button-link dark-b llinks">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkjzqzo" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nombre</label>
+    <input type="text" name="name" id="full-name" placeholder="Nombre y Apellidos" required="">
+    <label for="email-address">Email</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="your@email.com" required="">
+    <label for="message">Mensaje</label>
+    <textarea rows="5" name="message" id="message" placeholder="Escribe su mensaje." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contacto La Reforma Brutal">
+  </fieldset>
+  <input type="submit" value="Enviar">
+</form>
+      <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mwkjzqzo",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Mensaje:",
+        name: "message",
+        placeholder: "Escribe su mensaje.",
+      },
+      { type: "enviar" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#ffffff"
+      },
+      button: {
+        backgroundColor: "#ff0000"
+      }
+    }
+  });
+</script>
                         </div>
                     </div>
                     <div class="col-lg-4 ml-auto">
