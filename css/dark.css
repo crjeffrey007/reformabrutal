@@ -41,7 +41,7 @@ body {
     font-smoothing: antialiased;
 }
 a {
-    color: #EEEEEE;
+    color: #ff0000;
 }
 a:hover {
     text-decoration: none;
@@ -142,7 +142,7 @@ button.button-link {
 }
 .owl-theme .owl-dots .owl-dot.active span {
     width: 50px;
-    background: #0084F7;
+    background: #ff0000;
 }
 .sec-word {
     font-weight: 600;
@@ -673,7 +673,7 @@ button.button-link {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #0084f7;
+    background-color: #ff0000;
     transform-origin: 0 50%;
     transform: scaleX(0);
     transition: transform .35s cubic-bezier(.07, .98, 0, .96);
@@ -912,7 +912,7 @@ button.button-link {
     font-size: 20px;
     padding: 10px 11px;
     border-radius: 5px;
-    background: #0084F7;
+    background: #ff0000;
     height: auto;
     color: #fff;
     position: absolute;
