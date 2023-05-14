@@ -225,3 +225,31 @@ Window.on('scroll', function () {
 Window.on('load', function () {
   Wrapload.fadeOut(600);
 });
+// Obtiene una referencia a la colección de mensajes
+var messagesRef = firebase.firestore().collection("reforma");
+
+// Escucha el evento submit del formulario
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Obtiene los valores de los campos del formulario
+  var name = document.getElementById("nombre").value;
+  var apellidos = document.getElementById("apellidos").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("mensaje").value;
+
+  // Almacena los valores en la base de datos de Firebase
+  messagesRef.add({
+    nombre: nombre,
+    apellidos: apellidos,
+    email: email,
+    mensaje: mensaje,
+  }).then(function() {
+    // Muestra un mensaje de éxito
+    alert("Tu mensaje ha sido enviado");
+    document.getElementById("contact-form").reset();
+  }).catch(function(error) {
+    // Muestra un mensaje de error
+    alert("Error al enviar el mensaje: " + error);
+  });
+});
