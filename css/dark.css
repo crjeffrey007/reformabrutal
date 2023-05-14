@@ -472,10 +472,10 @@ button.button-link {
 .wrap-imageabout {
     padding: 0px;
     border: 1px solid #434648;
-    background: #2D2D2D;
+    background: #000000;
 }
 .wrap-imageabout img {
-    width: 300px;
+    width: 100%;
     margin: auto;
     display: flex;
 }
