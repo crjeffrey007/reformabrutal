@@ -475,7 +475,7 @@ button.button-link {
     background: #000000;
 }
 .wrap-imageabout img {
-    width: 100%;
+    width: 50%;
     margin: auto;
     display: flex;
 }
