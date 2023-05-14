@@ -132,13 +132,13 @@ button.button-link {
 .bg-overlay {
     height: 100%;
     width: 30%;
-    background: #0084F7;
+    background: #ff0000;
     position: absolute;
     right: 0;
     top: 0;
 }
 .nav-link.active {
-    color: #0084F7;
+    color: #ff0000;
 }
 .owl-theme .owl-dots .owl-dot.active span {
     width: 50px;
@@ -936,7 +936,7 @@ button.button-link {
     border-radius: 2px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 50%);
     border-radius: 50%;
-    background: #0084F7;
+    background: #ff0000;
     transition: all .3s;
 }
 .scroll-top .dropicon {
