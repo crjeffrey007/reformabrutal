@@ -158,7 +158,7 @@ button.button-link {
     width: 100%;
     height: 100%;
     z-index: 999999999 !important;
-    background-color: #2D2D2D;
+    background-color: #ff0000;
     top: 0;
     left: 0;
     right: 0;
@@ -456,7 +456,7 @@ button.button-link {
 }
 .sosmed-list li a:hover i {
     border: 2px solid #0084F7;
-    background: #0084F7;
+    background: #ff0000;
     color: #212121;
     position: relative;
 }
